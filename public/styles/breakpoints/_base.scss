@@ -1,0 +1,124 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+body {
+  font-family: 'Oswald','Noto Sans JP', sans-serif;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+.font-sm {
+  font-size: 14px;
+}
+.font-md {
+  font-size: 17px;
+}
+.font-lr {
+  font-size: 17px;
+}
+.font-lg {
+  font-size: 25px;
+}
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+.pb-lg {
+  padding-bottom: 80px !important;
+}
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1070px;
+}
+.center{
+  text-align: center;
+}
+.right{
+  text-align: right;
+}
+.left{
+  text-align: left;
+}
+.w_100{
+  width: 100%;
+}
+.flex {
+  display: flex;
+  flex-flow: wrap;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;               /* 幅指定 */
+  text-align: center;
+  z-index: 100;
+  background-color: white;
+  box-shadow: 0px -2px 30px -9px rgba(0,0,0,0.4);
+
+  &__container{
+    width: 100%;               /* 幅指定 */
+  }
+  &__item{
+    width: 18%;               /* 幅指定 */
+    display:  inline-block;     /* インラインブロック要素にする */
+    margin: 5px 0;         /* 要素同士の隙間調整 */
+    box-sizing: border-box;     /* 崩れ防止 */
+    vertical-align: top;
+      & > a > span {
+        font-size: 5px;
+      }
+  }
+  &__icon{
+    width: 100%;
+    & > i {
+      font-size: 30px;
+    }
+  }
+}
+.clamp2{
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.clamp1{
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.sub_color{
+  color: #606060;
+}
+.item_box{
+  &__inner{
+    padding: 5px;
+    color: black;
+  }
+  &__name{
+      color: #606060;
+      &:hover{
+          text-decoration: none;
+      }
+  }
+}
+.a_link :hover {
+  text-decoration: none;
+}
+.contact_form{
+  max-width: 600px;
+  margin: auto;
+}
+.write_space_normal{
+    white-space: normal;
+    width: auto;
+}

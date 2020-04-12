@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+body {
+  font-family: 'Oswald','Noto Sans JP', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.font-sm {
+  font-size: 14px;
+}
+
+.font-md {
+  font-size: 17px;
+}
+
+.font-lr {
+  font-size: 17px;
+}
+
+.font-lg {
+  font-size: 25px;
+}
+
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+
+.pb-lg {
+  padding-bottom: 80px !important;
+}
+
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1070px;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.w_100 {
+  width: 100%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* 幅指定 */
+  text-align: center;
+  z-index: 100;
+  background-color: white;
+  -webkit-box-shadow: 0px -2px 30px -9px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px -2px 30px -9px rgba(0, 0, 0, 0.4);
+}
+
+.footer__container {
+  width: 100%;
+  /* 幅指定 */
+}
+
+.footer__item {
+  width: 18%;
+  /* 幅指定 */
+  display: inline-block;
+  /* インラインブロック要素にする */
+  margin: 5px 0;
+  /* 要素同士の隙間調整 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 崩れ防止 */
+  vertical-align: top;
+}
+
+.footer__item > a > span {
+  font-size: 5px;
+}
+
+.footer__icon {
+  width: 100%;
+}
+
+.footer__icon > i {
+  font-size: 30px;
+}
+
+.clamp2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.clamp1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.sub_color {
+  color: #606060;
+}
+
+.item_box__inner {
+  padding: 5px;
+  color: black;
+}
+
+.item_box__name {
+  color: #606060;
+}
+
+.item_box__name:hover {
+  text-decoration: none;
+}
+
+.a_link :hover {
+  text-decoration: none;
+}
+
+.contact_form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.write_space_normal {
+  white-space: normal;
+  width: auto;
+}
+
+@media (min-width: 576px) {
+  /******************************************************************
+
+Stylesheet: 576px以上(スマホの横向き)のモニタで適用
+
+******************************************************************/
+}
+
+@media (min-width: 768px) {
+  /******************************************************************
+
+Stylesheet: 768px以上のタブレットやモニタで適用
+
+******************************************************************/
+  .flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .write_space_normal {
+    white-space: normal;
+    width: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  /******************************************************************
+
+Stylesheet: 992px以上のモニタで適用
+
+******************************************************************/
+  .font-sm {
+    font-size: 16px;
+  }
+  .font-md {
+    font-size: 19px;
+  }
+  .font-lr {
+    font-size: 23px;
+  }
+  .font-lg {
+    font-size: 36px;
+  }
+  .mb-lg {
+    margin-bottom: 150px !important;
+  }
+  .pb-lg {
+    padding-bottom: 150px !important;
+  }
+  .footer {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  /******************************************************************
+
+Stylesheet: 1200px以上のモニタで適用
+
+******************************************************************/
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /******************************************************************
+
+Stylesheet: Retinaディスプレイで適用
+
+******************************************************************/
+  /* 
+
+EXAMPLE 
+.icon {
+	background: url(images/test@2x.png) no-repeat;
+	background-size: 24px 24px;
+}
+
+*/
+}
+
+@media print {
+  /******************************************************************
+
+Stylesheet: プリンタのみに適用
+
+******************************************************************/
+}
+/*# sourceMappingURL=style.css.map */
