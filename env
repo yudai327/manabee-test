@@ -2,7 +2,7 @@ APP_NAME=yutudemy
 APP_ENV=local
 APP_KEY=base64:vXlWG4YuNOiO1HjeEtoterEANCqEPTleoXXPMacx+zA=
 APP_DEBUG=true
-APP_URL=http://localhost
+APP_URL=http://18.182.156.140/
 
 LOG_CHANNEL=stack
 
